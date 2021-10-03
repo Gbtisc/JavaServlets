@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+* {
+ 	box-sizing: border-box;
+}
+
+body {
+ 	font-family: Arial, Helvetica, sans-serif;
+ 	background-color: #f1f1f1;
+}
+
+header {
+ 	background-color: black;
+ 	padding: 1px;
+	text-align: center;
+	font-size: 25px;
+	color: white;
+}
+
+nav {
+	float: left;
+	width: 20%;
+	height:100%;
+	background: #666;
+	padding: 20px;
+}
+
+.registerFormTable {
+	color: white;
+}
+
+article {
+	float: left;
+	padding: 20px;
+	width: 80%;
+	background-color: #ccc;
+}
+
+#content {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+#content td {
+	border: 1px solid #ddd;
+	padding: 8px;
+}
+
+#content th {
+	padding: 8px;
+}
+
+#content tr:nth-child(even){
+	background-color: #f2f2f2;
+}
+
+#content tr:hover {
+	background-color: #ddd;
+}
+
+#content th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: navy;
+  color: white;
+}
+
+section::after {
+ 	content: "";
+ 	display: table;
+ 	clear: both;
+}
+
+@media (max-width: 600px) {
+  nav, article {
+  	width: 100%;
+    height: auto;
+  }
+}
